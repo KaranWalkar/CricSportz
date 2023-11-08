@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PlayerTableViewCell" rowHeight="73" id="KGk-i7-Jjw" customClass="PlayerTableViewCell" customModule="SportzCric" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nU4-GR-BNh">
+                        <rect key="frame" x="10" y="10" width="300" height="53"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fXW-i3-WHb">
+                                <rect key="frame" x="5" y="7.6666666666666643" width="40" height="38.666666666666671"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fXW-i3-WHb" secondAttribute="height" multiplier="1:1" id="I3c-Bp-cu5"/>
+                                    <constraint firstAttribute="width" constant="40" id="vfI-1J-uoJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HxE-0j-elg">
+                                <rect key="frame" x="50" y="5" width="245" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="J7J-x0-O93"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fXW-i3-WHb" firstAttribute="leading" secondItem="nU4-GR-BNh" secondAttribute="leading" constant="5" id="2Zo-Ob-fv9"/>
+                            <constraint firstItem="fXW-i3-WHb" firstAttribute="centerY" secondItem="nU4-GR-BNh" secondAttribute="centerY" id="DFg-QJ-JXk"/>
+                            <constraint firstAttribute="trailing" secondItem="HxE-0j-elg" secondAttribute="trailing" constant="5" id="Dse-8c-Sdu"/>
+                            <constraint firstAttribute="bottom" secondItem="HxE-0j-elg" secondAttribute="bottom" constant="5" id="Fw3-6F-e0U"/>
+                            <constraint firstItem="HxE-0j-elg" firstAttribute="leading" secondItem="fXW-i3-WHb" secondAttribute="trailing" constant="5" id="SgB-qt-daA"/>
+                            <constraint firstItem="HxE-0j-elg" firstAttribute="top" secondItem="nU4-GR-BNh" secondAttribute="top" constant="5" id="YfV-EA-J3V"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="nU4-GR-BNh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Fgt-tQ-Gp2"/>
+                    <constraint firstItem="nU4-GR-BNh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="opM-ai-3Fm"/>
+                    <constraint firstAttribute="trailing" secondItem="nU4-GR-BNh" secondAttribute="trailing" constant="10" id="qm6-T2-tEP"/>
+                    <constraint firstAttribute="bottom" secondItem="nU4-GR-BNh" secondAttribute="bottom" constant="10" id="y7u-9U-Xcn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="playerNameLabel" destination="HxE-0j-elg" id="IUN-50-Kf9"/>
+                <outlet property="playerView" destination="nU4-GR-BNh" id="WIh-cE-riq"/>
+            </connections>
+            <point key="canvasLocation" x="-64.122137404580144" y="29.929577464788736"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="person.crop.circle" catalog="system" width="128" height="123"/>
+    </resources>
+</document>
